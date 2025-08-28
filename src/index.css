@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Elangeni TVET College SRC Voting System Design System
+South African Identity Theme: Green, Yellow, Black
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 120 30% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 99%;
+    --card-foreground: 120 30% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 120 30% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* South African Flag Colors - Primary Green */
+    --primary: 120 100% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 120 100% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* South African Gold/Yellow */
+    --secondary: 48 100% 50%;
+    --secondary-foreground: 120 30% 10%;
+    --secondary-hover: 48 100% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 120 15% 95%;
+    --muted-foreground: 120 15% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Red from SA flag */
+    --accent: 0 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Blue from SA flag */
+    --info: 220 100% 35%;
+    --info-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 120 15% 90%;
+    --input: 120 15% 96%;
+    --ring: 120 100% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Voting System Specific Colors */
+    --success: 120 60% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 100% 55%;
+    --warning-foreground: 120 30% 10%;
+    
+    /* Gradients */
+    --gradient-sa: linear-gradient(135deg, hsl(120 100% 25%), hsl(48 100% 50%));
+    --gradient-voting: linear-gradient(180deg, hsl(120 100% 25%), hsl(120 100% 20%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(120 15% 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px hsl(120 20% 50% / 0.1);
+    --shadow-button: 0 2px 10px hsl(120 100% 25% / 0.2);
+    --shadow-voting: 0 8px 30px hsl(120 30% 10% / 0.15);
 
     --sidebar-background: 0 0% 98%;
 
